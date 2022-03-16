@@ -33,7 +33,7 @@ namespace Foreach
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int total2 = 0;
+            int total2 = 0, a=0;
             int[] numbers2 = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
             foreach (int n in numbers2)
             {
@@ -41,8 +41,10 @@ namespace Foreach
                 {
                     listBox2.Items.Add(n);
                     total2 = total2 + n;
+                    a++;
                 }
                 label5.Text = total2.ToString();
+                label6.Text = a.ToString();
                
             }
         }

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0635879-53D6-4B1A-8219-97720CC9DAD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BonusProject1</RootNamespace>
+    <AssemblyName>BonusProject1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDersİşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDersİşlemleri.Designer.cs">
+      <DependentUpon>frmDersİşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKulüp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKulüp.Designer.cs">
+      <DependentUpon>frmKulüp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotlar.Designer.cs">
+      <DependentUpon>frmNotlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmögretmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmögretmen.Designer.cs">
+      <DependentUpon>frmögretmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmÖğrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmÖğrenci.Designer.cs">
+      <DependentUpon>frmÖğrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmÖğrenciNotları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmÖğrenciNotları.Designer.cs">
+      <DependentUpon>frmÖğrenciNotları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDersİşlemleri.resx">
+      <DependentUpon>frmDersİşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKulüp.resx">
+      <DependentUpon>frmKulüp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotlar.resx">
+      <DependentUpon>frmNotlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmögretmen.resx">
+      <DependentUpon>frmögretmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmÖğrenci.resx">
+      <DependentUpon>frmÖğrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmÖğrenciNotları.resx">
+      <DependentUpon>frmÖğrenciNotları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
